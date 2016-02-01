@@ -26,6 +26,7 @@ class InputParser:
 
                 for cluster_json in clusters_json:
                     cluster = Cluster()
+                    cluster.set_dimensions(self.get_dimensions())
 
                     if cluster_json["type"]:
                         type_found = False

@@ -1,7 +1,8 @@
 import sys
 
+from handler.InputParser import InputParser
+from handler.Plotter import Plotter
 from model.Dataset import Dataset
-from parse.InputParser import InputParser
 
 
 def get_inputfile():
@@ -37,4 +38,13 @@ if __name__ == "__main__":
             print()
 
             dataset = Dataset(dimensions, clusters)
+
+            print("Generating random values for clusters...")
             dataset.generate_values()
+            print("Balancing clusters...")
+            dataset.balance_clusters()
+
+            if 1 <= dimensions <= 2:
+                print("Input has <= 2 dimensions - showing plot")
+                plotter = Plotter(dataset)
+                plotter.plot()
