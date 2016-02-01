@@ -14,9 +14,9 @@ This script generates datasets to be used with the [SOMToolbox](http://www.ifs.t
  * number of dimensions
  * number of clusters
  * for each cluster:
- ** distribution type
- ** cardinality
- ** density
+  * distribution type
+  * cardinality
+  * density
 
 Both the cardinality and density range from 1 (low) to 10 (high). The following distribution types are supported:
 
@@ -36,7 +36,7 @@ First you'll want to install the dependencies. Afterwards you can run the progra
 
 ```
 pip install -r requirements.txt
-python generator.py <path-to-input-files>
+python generator.py <path-to-input-file>
 ```
 
 The input file is a JSON file. The format should be self-explanatory given an example:
