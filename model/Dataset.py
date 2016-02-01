@@ -6,10 +6,14 @@ from model.rng.RNGFactory import RNGFactory
 
 
 class Dataset:
-    def __init__(self, dimensions, clusters):
+    def __init__(self, dimensions, clusters, export_name):
         self.dimensions = dimensions
         self.clusters = clusters
-        self.translate_try_count = 2500
+        if not export_name:
+            self.export_name = "clusters"
+        else:
+            self.export_name = export_name
+        self.translate_try_count = 10000
 
     def generate_values(self):
         for cluster in self.clusters:
@@ -47,6 +51,18 @@ class Dataset:
         for i in range(0, len(self.clusters)):
             cluster = self.clusters[i]
             cluster.translate_values(best_centers[i])
+
+    def get_row_count(self):
+        sum = 0
+        for cluster in self.clusters:
+            sum += len(cluster.values)
+        return sum
+
+    def get_rows(self):
+        rows = []
+        for cluster in self.clusters:
+            rows.append(cluster.values)
+        return [item for sublist in rows for item in sublist]
 
     def get_sum_of_distances(self, centers):
         sum = 0

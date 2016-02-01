@@ -1,10 +1,31 @@
 {
   "dimensions": 2,
+  "export_name": "example1",
   "clusters": [
     {
-      "type": "gaussian",
-      "cardinality": "7",
+      "type": "binomial",
+      "cardinality": "4",
+      "density": "8"
+    },
+    {
+      "type": "exponential",
+      "cardinality": "5",
       "density": "7"
+    },
+    {
+      "type": "pareto",
+      "cardinality": "9",
+      "density": "6"
+    },
+    {
+      "type": "poisson",
+      "cardinality": "9",
+      "density": "2"
+    },
+    {
+      "type": "gaussian",
+      "cardinality": "3",
+      "density": "10"
     }
   ]
 }
