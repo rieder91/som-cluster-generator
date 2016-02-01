@@ -12,6 +12,6 @@ class ExponentialRNG(RNG):
         return np.random.exponential(self.scale)
 
     @staticmethod
-    def get_mapped_scale(self):
+    def get_mapped_scale(density):
         # 1.0 is default and the higher it gets, the less dense it becomes
-        return 5.0
+        return 10 / density

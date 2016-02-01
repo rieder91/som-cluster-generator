@@ -41,7 +41,7 @@ if __name__ == "__main__":
 
             print("Generating random values for clusters...")
             dataset.generate_values()
-            print("Balancing clusters...")
+            print("Balancing clusters... (this may take a while)")
             dataset.balance_clusters()
 
             if 1 <= dimensions <= 2:

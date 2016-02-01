@@ -13,5 +13,4 @@ class PoissonRNG(RNG):
 
     @staticmethod
     def get_mapped_lambda(density):
-        # TODO
-        return 5
+        return (1 / density) * 20

@@ -14,11 +14,11 @@ class BinomialRNG(RNG):
     @staticmethod
     # number of trials
     def get_mapped_n(density):
-        # TODO smaller N means more density
-        return 500
+        # smaller N means more density
+        return (1 / pow(density, 2)) * 750
 
     @staticmethod
     # probability of each trial
     def get_mapped_p(density):
-        # TODO we should probably leave this at 0.5?
+        # we should probably leave this at 0.5
         return 0.5

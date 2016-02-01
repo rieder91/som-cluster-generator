@@ -1,10 +1,10 @@
 {
-  "dimensions": 1,
+  "dimensions": 2,
   "clusters": [
     {
-      "type": "poisson",
-      "cardinality": "8",
-      "density": "8"
+      "type": "gaussian",
+      "cardinality": "5",
+      "density": "5"
     }
   ]
 }

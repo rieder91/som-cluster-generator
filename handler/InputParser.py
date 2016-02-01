@@ -44,7 +44,7 @@ class InputParser:
                         if 0 < cardinality <= 10:
                             cluster.set_cardinality(cardinality)
                         else:
-                            print("Invalid cardinality. Has to be within 1 to 10")
+                            print("Invalid cardinality. Has to be within 1 to 10. Defaulting to 5.")
                     else:
                         print("Couldn't find 'cardinality' element for cluster")
 
@@ -53,7 +53,7 @@ class InputParser:
                         if 0 < density <= 10:
                             cluster.set_density(density)
                         else:
-                            print("Invalid density. Has to be within 1 to 10")
+                            print("Invalid density. Has to be within 1 to 10. Defaulting to 5.")
                     else:
                         print("Couldn't find 'density' element for cluster")
 

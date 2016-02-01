@@ -13,5 +13,5 @@ class GaussianRNG(RNG):
 
     @staticmethod
     def get_mapped_sigma(density):
-        # TODO
-        return 3.0
+        # determined empirically
+        return (10 / density) * 1.25
