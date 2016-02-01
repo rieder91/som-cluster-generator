@@ -16,7 +16,6 @@ class InputParser:
             else:
                 print("Couldn't find 'dimensions' element in input file")
 
-
     def get_export_name(self):
         with open(self.filename) as file:
             data = json.load(file)
@@ -24,7 +23,6 @@ class InputParser:
                 return data["export_name"]
             else:
                 print("Couldn't find 'export_name' element in input file")
-
 
     def get_clusters(self):
         clusters = []
