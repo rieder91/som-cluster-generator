@@ -24,9 +24,6 @@ class Plotter:
                     y[i] = float(value[1])
                 i += 1
 
-        print(x)
-        print(y)
-
         plt.plot(x, y, 'k,', markersize=1, marker='o')
         axes = plt.gca()
         axes.set_xlim([-100, 100])

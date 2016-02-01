@@ -1,7 +1,8 @@
 import sys
 
-from handler.InputParser import InputParser
-from handler.Plotter import Plotter
+from util.FileWriter import FileWriter
+from util.InputParser import InputParser
+from util.Plotter import Plotter
 from model.Dataset import Dataset
 
 
@@ -27,6 +28,8 @@ if __name__ == "__main__":
             print("Going interactive")
         else:
             print("Loading configuration from file %s" % inputfile)
+            print()
+
             inputParser = InputParser(inputfile)
             dimensions = inputParser.get_dimensions()
             clusters = inputParser.get_clusters()
@@ -38,13 +41,18 @@ if __name__ == "__main__":
             print()
 
             dataset = Dataset(dimensions, clusters)
-
             print("Generating random values for clusters...")
             dataset.generate_values()
             print("Balancing clusters... (this may take a while)")
             dataset.balance_clusters()
+            print()
+
+            filewriter = FileWriter(dataset)
+            print("Writing SOMToolbox files...")
+            filewriter.write_to_somtoolbox_file()
 
             if 1 <= dimensions <= 2:
+                print()
                 print("Input has <= 2 dimensions - showing plot")
                 plotter = Plotter(dataset)
                 plotter.plot()

@@ -3,8 +3,8 @@
   "clusters": [
     {
       "type": "gaussian",
-      "cardinality": "5",
-      "density": "5"
+      "cardinality": "7",
+      "density": "7"
     }
   ]
 }
