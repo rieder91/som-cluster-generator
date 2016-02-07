@@ -39,6 +39,12 @@ pip install -r requirements.txt
 python generator.py <path-to-input-file>
 ```
 
+In case the installation of the dependencies doesn't work out-of-the-box, they can also be installed manually:
+
+ * [numpy](https://docs.scipy.org/doc/numpy-1.10.1/user/install.html)
+ * [matplotlib](http://matplotlib.org/users/installing.html)
+
+
 The input file is a JSON file. The format should be self-explanatory given an example:
 
 ```
