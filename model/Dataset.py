@@ -41,7 +41,7 @@ class Dataset:
             for _ in self.clusters:
                 center = ()
                 for j in range(0, self.dimensions):
-                    center += (random.randint(-75, 75),)
+                    center += (random.randint(-50, 50),)
                 centers.append(center)
 
             if self.get_sum_of_distances(centers) > best_distance:

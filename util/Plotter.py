@@ -26,6 +26,6 @@ class Plotter:
 
         plt.plot(x, y, 'k,', markersize=1, marker='o')
         axes = plt.gca()
-        axes.set_xlim([-100, 100])
-        axes.set_ylim([-100, 100])
+        axes.set_xlim([-75, 75])
+        axes.set_ylim([-75, 75])
         plt.show()

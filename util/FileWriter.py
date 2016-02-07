@@ -19,6 +19,7 @@ class FileWriter:
                 file.write("%s dummycomponent_%s\n" % (i, i))
 
     def create_vec_file(self, filename):
+        row_cnt = 1
         with open(filename, 'w') as file:
             file.write("$TYPE vec\n")
             file.write("$XDIM %s\n" % self.dataset.get_row_count())
@@ -27,4 +28,6 @@ class FileWriter:
             for row in self.dataset.get_rows():
                 for item in row:
                     file.write("%s " % float(item))
+                file.write("%s" % row_cnt)
                 file.write("\n")
+                row_cnt += 1
