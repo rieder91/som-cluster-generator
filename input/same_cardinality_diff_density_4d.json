@@ -1,0 +1,41 @@
+{
+  "dimensions": 4,
+  "export_name": "same_cardinality_diff_density_4d",
+  "clusters": [
+    {
+      "type": "gaussian",
+      "cardinality": "5",
+      "density": "7"
+    },
+    {
+      "type": "gaussian",
+      "cardinality": "5",
+      "density": "10"
+    },
+    {
+      "type": "gaussian",
+      "cardinality": "5",
+      "density": "2"
+    },
+    {
+      "type": "gaussian",
+      "cardinality": "5",
+      "density": "1"
+    },
+    {
+      "type": "gaussian",
+      "cardinality": "5",
+      "density": "3"
+    },
+    {
+      "type": "gaussian",
+      "cardinality": "5",
+      "density": "9"
+    },
+    {
+      "type": "gaussian",
+      "cardinality": "5",
+      "density": "8"
+    }
+  ]
+}

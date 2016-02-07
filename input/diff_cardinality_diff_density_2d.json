@@ -1,0 +1,41 @@
+{
+  "dimensions": 2,
+  "export_name": "diff_cardinality_diff_density_2d",
+  "clusters": [
+    {
+      "type": "binomial",
+      "cardinality": "10",
+      "density": "7"
+    },
+    {
+      "type": "binomial",
+      "cardinality": "6",
+      "density": "6"
+    },
+    {
+      "type": "binomial",
+      "cardinality": "7",
+      "density": "5"
+    },
+    {
+      "type": "binomial",
+      "cardinality": "1",
+      "density": "2"
+    },
+    {
+      "type": "binomial",
+      "cardinality": "2",
+      "density": "3"
+    },
+    {
+      "type": "binomial",
+      "cardinality": "9",
+      "density": "7"
+    },
+    {
+      "type": "binomial",
+      "cardinality": "8",
+      "density": "8"
+    }
+  ]
+}

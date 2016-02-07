@@ -1,0 +1,41 @@
+{
+  "dimensions": 10,
+  "export_name": "same_cardinality_same_density_10d",
+  "clusters": [
+    {
+      "type": "poisson",
+      "cardinality": "5",
+      "density": "5"
+    },
+    {
+      "type": "poisson",
+      "cardinality": "5",
+      "density": "5"
+    },
+    {
+      "type": "poisson",
+      "cardinality": "5",
+      "density": "5"
+    },
+    {
+      "type": "poisson",
+      "cardinality": "5",
+      "density": "5"
+    },
+    {
+      "type": "poisson",
+      "cardinality": "5",
+      "density": "5"
+    },
+    {
+      "type": "poisson",
+      "cardinality": "5",
+      "density": "5"
+    },
+    {
+      "type": "poisson",
+      "cardinality": "5",
+      "density": "5"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+$TYPE template
+$XDIM 2
+$YDIM 8750
+$VECDIM 10
+1 dummycomponent_1
+2 dummycomponent_2
+3 dummycomponent_3
+4 dummycomponent_4
+5 dummycomponent_5
+6 dummycomponent_6
+7 dummycomponent_7
+8 dummycomponent_8
+9 dummycomponent_9
+10 dummycomponent_10
